@@ -1,0 +1,212 @@
+{
+  "home_assistant": {
+    "installation_type": "Home Assistant OS",
+    "version": "2022.8.4",
+    "dev": false,
+    "hassio": true,
+    "virtualenv": false,
+    "python_version": "3.10.5",
+    "docker": true,
+    "arch": "x86_64",
+    "timezone": "Europe/Budapest",
+    "os_name": "Linux",
+    "os_version": "5.15.55",
+    "supervisor": "2022.08.3",
+    "host_os": "Home Assistant OS 8.4",
+    "docker_version": "20.10.14",
+    "chassis": "vm",
+    "run_as_root": true
+  },
+  "custom_components": {
+    "hacs": {
+      "version": "1.26.2",
+      "requirements": [
+        "aiogithubapi>=22.2.4"
+      ]
+    },
+    "ble_monitor": {
+      "version": "9.1.1",
+      "requirements": [
+        "pycryptodomex>=3.14.1",
+        "janus>=1.0.0",
+        "aioblescan>=0.2.13",
+        "btsocket>=0.2.0",
+        "pyric>=0.1.6.3"
+      ]
+    },
+    "aqara_gateway": {
+      "version": "0.0.14",
+      "requirements": [
+        "paho-mqtt>=1.5.0"
+      ]
+    },
+    "xiaomi_gateway3": {
+      "version": "2.1.0",
+      "requirements": [
+        "zigpy>=0.33.0"
+      ]
+    },
+    "climate_template": {
+      "version": "0.4.1",
+      "requirements": []
+    },
+    "xiaomi_miio_airpurifier": {
+      "version": "2022.8.0.0",
+      "requirements": [
+        "construct==2.10.56",
+        "python-miio>=0.5.12"
+      ]
+    },
+    "xiaomi_cloud_map_extractor": {
+      "version": "v2.2.0",
+      "requirements": [
+        "pillow",
+        "pybase64",
+        "python-miio",
+        "requests",
+        "pycryptodome"
+      ]
+    },
+    "nuki_ng": {
+      "version": "0.2.1",
+      "requirements": []
+    },
+    "localtuya": {
+      "version": "3.2.1",
+      "requirements": []
+    },
+    "google_home": {
+      "version": "1.9.14",
+      "requirements": [
+        "glocaltokens==0.6.7"
+      ]
+    },
+    "panasonic_cc": {
+      "version": "1.0.32",
+      "requirements": []
+    },
+    "volkswagencarnet": {
+      "version": "v4.4.58",
+      "requirements": [
+        "pytz",
+        "volkswagencarnet==4.4.53"
+      ]
+    },
+    "ui_lovelace_minimalist": {
+      "version": "v1.1.0",
+      "requirements": [
+        "aiofiles==0.8.0",
+        "aiogithubapi>=22.2.4"
+      ]
+    },
+    "browser_mod": {
+      "version": "1.5.3",
+      "requirements": []
+    },
+    "xiaomi_miot": {
+      "version": "0.6.10",
+      "requirements": [
+        "construct==2.10.56",
+        "python-miio>=0.5.6",
+        "micloud>=0.3"
+      ]
+    },
+    "sonoff": {
+      "version": "3.1.0",
+      "requirements": [
+        "pycryptodome>=3.6.6"
+      ]
+    }
+  },
+  "integration_manifest": {
+    "domain": "sonoff",
+    "name": "Sonoff",
+    "config_flow": true,
+    "documentation": "https://github.com/AlexxIT/SonoffLAN",
+    "issue_tracker": "https://github.com/AlexxIT/SonoffLAN/issues",
+    "codeowners": [
+      "@AlexxIT"
+    ],
+    "dependencies": [
+      "http",
+      "zeroconf"
+    ],
+    "requirements": [
+      "pycryptodome>=3.6.6"
+    ],
+    "version": "3.1.0",
+    "iot_class": "local_push",
+    "is_built_in": false
+  },
+  "data": {
+    "version": "3871c0b",
+    "cloud_auth": true,
+    "config": null,
+    "options": {
+      "mode": "auto",
+      "debug": true
+    },
+    "errors": [],
+    "device": {
+      "uiid": 190,
+      "params": {
+        "bindInfos": "***",
+        "version": 8,
+        "ssid": "***",
+        "bssid": "***",
+        "fwVersion": "1.0.2",
+        "switches": [
+          {
+            "outlet": 0,
+            "switch": "on"
+          }
+        ],
+        "configure": [
+          {
+            "startup": "stay",
+            "outlet": 0
+          }
+        ],
+        "pulses": [
+          {
+            "pulse": "off",
+            "switch": "off",
+            "outlet": 0,
+            "width": 500
+          }
+        ],
+        "rssi": -56,
+        "threshold": {
+          "actPow": {
+            "min": 10,
+            "max": 400000
+          },
+          "voltage": {
+            "min": 18500,
+            "max": 26400
+          },
+          "current": {
+            "min": 10,
+            "max": 1600
+          }
+        },
+        "current": 0,
+        "voltage": 23465,
+        "power": 0,
+        "dayKwh": 0,
+        "monthKwh": 0,
+        "uiActive": 60,
+        "timeZone": 2,
+        "only_device": {
+          "ota": "success",
+          "ota_fail_reason": 0
+        },
+        "sledOnline": "off"
+      },
+      "model": "POWR316D",
+      "online": true,
+      "localtype": "plug",
+      "deviceid": "1001736fba"
+    }
+  }
+}
