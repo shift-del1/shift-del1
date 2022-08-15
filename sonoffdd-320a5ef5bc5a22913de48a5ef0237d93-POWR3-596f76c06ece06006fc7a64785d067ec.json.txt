@@ -1,0 +1,185 @@
+{
+  "home_assistant": {
+    "installation_type": "Home Assistant OS",
+    "version": "2022.4.2",
+    "dev": false,
+    "hassio": true,
+    "virtualenv": false,
+    "python_version": "3.9.9",
+    "docker": true,
+    "arch": "x86_64",
+    "timezone": "Asia/Baghdad",
+    "os_name": "Linux",
+    "os_version": "5.10.103",
+    "supervisor": "2022.05.0",
+    "host_os": "Home Assistant OS 7.5",
+    "docker_version": "20.10.9",
+    "chassis": "vm",
+    "run_as_root": true
+  },
+  "custom_components": {
+    "samsungtv_smart": {
+      "version": "0.6.3",
+      "requirements": [
+        "websocket-client>=0.58.0",
+        "wakeonlan>=2.0.0",
+        "aiofiles>=0.8.0"
+      ]
+    },
+    "sonoff": {
+      "version": "3.0.3",
+      "requirements": [
+        "pycryptodome>=3.6.6"
+      ]
+    },
+    "samsungtv_tizen": {
+      "version": "1.5.9",
+      "requirements": [
+        "websocket-client==0.56.0",
+        "wakeonlan==1.1.6",
+        "numpy==1.21.1"
+      ]
+    },
+    "webrtc": {
+      "version": "v2.3.0",
+      "requirements": []
+    },
+    "smartthinq_sensors": {
+      "version": "0.12.11",
+      "requirements": [
+        "pycountry>=20.7.3",
+        "xmltodict>=0.12.0"
+      ]
+    },
+    "hacs": {
+      "version": "1.24.5",
+      "requirements": [
+        "aiogithubapi>=21.11.0"
+      ]
+    },
+    "sia": {
+      "version": "0.3.11",
+      "requirements": [
+        "pysiaalarm==2.0.9beta-3"
+      ]
+    },
+    "dahua": {
+      "version": "0.5.0",
+      "requirements": []
+    }
+  },
+  "integration_manifest": {
+    "domain": "sonoff",
+    "name": "Sonoff",
+    "config_flow": true,
+    "documentation": "https://github.com/AlexxIT/SonoffLAN",
+    "issue_tracker": "https://github.com/AlexxIT/SonoffLAN/issues",
+    "codeowners": [
+      "@AlexxIT"
+    ],
+    "dependencies": [
+      "http",
+      "zeroconf"
+    ],
+    "requirements": [
+      "pycryptodome>=3.6.6"
+    ],
+    "version": "3.0.3",
+    "iot_class": "local_push",
+    "is_built_in": false
+  },
+  "data": {
+    "cloud_auth": true,
+    "config": {
+      "username": "***",
+      "password": "***",
+      "force_update": [
+        "temperature",
+        "power"
+      ],
+      "scan_interval": "00:00:01"
+    },
+    "options": {
+      "mode": "auto",
+      "debug": true
+    },
+    "errors": [
+      {
+        "name": "custom_components.sonoff.core.ewelink.cloud",
+        "message": [
+          "Cloud WS Connection error: Cannot connect to host as-dispa.coolkit.cc:443 ssl:default [Try again]"
+        ],
+        "level": "WARNING",
+        "source": [
+          "custom_components/sonoff/core/ewelink/cloud.py",
+          294
+        ],
+        "timestamp": 1651771100.8066022,
+        "exception": "",
+        "count": 1,
+        "first_occurred": 1651771100.8066022
+      },
+      {
+        "name": "custom_components.sonoff.core.ewelink.cloud",
+        "message": [
+          "Cloud ERROR: {'error': 504, 'reason': 'Request Timeout', 'deviceid': '1000cf63bd', 'apikey': '0322dfdc-dc5a-4aad-b7e1-c4ab55941ee9', 'sequence': '1651770586000'}",
+          "Cloud ERROR: {'error': 504, 'reason': 'Request Timeout', 'deviceid': '1000cf63bd', 'apikey': '0322dfdc-dc5a-4aad-b7e1-c4ab55941ee9', 'sequence': '1651770587000'}",
+          "Cloud ERROR: {'error': 504, 'reason': 'Request Timeout', 'deviceid': '1000cf63bd', 'apikey': '0322dfdc-dc5a-4aad-b7e1-c4ab55941ee9', 'sequence': '1651774130000'}"
+        ],
+        "level": "WARNING",
+        "source": [
+          "custom_components/sonoff/core/ewelink/cloud.py",
+          313
+        ],
+        "timestamp": 1651774133.196105,
+        "exception": "",
+        "count": 3,
+        "first_occurred": 1651770592.5455978
+      }
+    ],
+    "device": {
+      "uiid": 32,
+      "params": {
+        "bindInfos": "***",
+        "version": 8,
+        "sledOnline": "on",
+        "ssid": "***",
+        "bssid": "***",
+        "fwVersion": "1.0.0",
+        "staMac": "***",
+        "rssi": -72,
+        "init": 1,
+        "alarmType": "pcv",
+        "alarmVValue": [
+          -1,
+          -1
+        ],
+        "alarmCValue": [
+          -1,
+          -1
+        ],
+        "alarmPValue": [
+          -1,
+          -1
+        ],
+        "switch": "on",
+        "startup": "on",
+        "pulse": "off",
+        "pulseWidth": 500,
+        "power": "0.00",
+        "voltage": "197.96",
+        "current": "0.00",
+        "oneKwh": "stop",
+        "uiActive": 60,
+        "timeZone": 3,
+        "hundredDaysKwh": "get",
+        "endTime": "2022-05-05T12:36:05.868Z",
+        "startTime": "2022-05-05T12:35:36.512Z"
+      },
+      "model": "POWR3",
+      "online": true,
+      "localtype": null,
+      "deviceid": "1001432bee"
+    }
+  }
+}
